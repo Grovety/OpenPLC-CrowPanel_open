@@ -1,6 +1,8 @@
-# OpenPLC CrowPanel - Hardware v1.2
+# OpenPLC CrowPanel
 
-This package is for **CrowPanel Advanced ESP32-P4, 7-10 inch models, hardware version 1.2**. It runs entirely on the panel. Wi-Fi, an OPC UA server, and configuration are not required.
+![Architecture](images/compressed_air_station.png)
+
+This package is for **CrowPanel Advanced ESP32-P4 v1.2, 7-10 inch models**. It runs entirely on the panel. Wi-Fi, an OPC UA server, and configuration are not required.
 
 ## Read before flashing
 

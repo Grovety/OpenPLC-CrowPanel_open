@@ -1,11 +1,12 @@
 # OpenPLC CrowPanel - User Manual
 
-This version is designed for **CrowPanel Advanced ESP32-P4, 7-10 inch models, hardware version 1.2**. It presents a complete compressed-air station with live equipment behavior, controls, trends, and alarms. All process values are generated and updated directly on the panel, so the system is ready to use immediately after startup.
+This version is designed for **CrowPanel Advanced ESP32-P4 v1.2, 7-10 inch models**. It presents a complete compressed-air station with live equipment behavior, controls, trends, and alarms. All process values are generated and updated directly on the panel, so the system is ready to use immediately after startup.
 
 ## Getting started
 
 1. Wait for the startup presentation to appear.
 2. Select **SHOW DEMO** to open the live HMI.
+   ![Show Demo](images/compressed_air_station.png)
 3. Use the bottom navigation bar to switch between **Overview**, **Equipment**, **Controls**, **Trends**, and **Alarms**.
 4. Use the gear icon in the top-right corner to adjust the panel settings.
 
@@ -26,13 +27,19 @@ The values change continuously. Compressors start and stop according to air dema
 
 ### Overview
 
+![Overview screen](images/overview.png)
+
 Use **Overview** for a quick summary of the whole station. It shows system health, active alarms, running equipment, equipment states, network pressure, air demand, and total power.
 
 ### Equipment
 
+![Equipment screen](images/equipment.png)
+
 Use **Equipment** to inspect a specific asset. Select a compressor, dryer, or receiver to see its available measurements and states, including details that are not shown on Overview.
 
 ### Controls
+
+![Controls screen](images/controls.png)
 
 The Controls page contains the available operator commands:
 
@@ -45,13 +52,19 @@ Control changes are applied immediately and the rest of the interface updates to
 
 ### Trends
 
+![Trends screen](images/trends.png)
+
 Trends display rolling charts for numeric process values. Each chart shows its equipment source, metric, current value, Y-axis range, and approximately the latest 60 seconds of history.
 
 ### Alarms
 
+![Alarms screen](images/alarms.png)
+
 Alarms show each active condition with its source, reason, and severity. The system can report sensor faults, high compressor temperature, and high receiver pressure. After an alarm is reset, it can appear again if the condition that caused it is still active.
 
 ## System settings
+
+![Settings screen](images/settings.png)
 
 Select the gear icon to open **System** settings. The following options are available:
 

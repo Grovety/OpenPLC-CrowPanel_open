@@ -1,8 +1,10 @@
 # OpenPLC CrowPanel - System Overview
 
-OpenPLC CrowPanel is an industrial HMI for **CrowPanel Advanced ESP32-P4, 7-10 inch models, hardware version 1.2**. It converts structured OPC UA data into a complete operator interface without manually configured equipment screens.
+OpenPLC CrowPanel is an industrial HMI for **CrowPanel Advanced ESP32-P4 v1.2, 7-10 inch models**. It converts structured OPC UA data into a complete operator interface without manually configured equipment screens.
 
 ## Architecture
+
+![Architecture](images/compressed_air_station.png)
 
 ```text
 Sensors / Actuators <-> PLC or Equipment Controller
@@ -29,6 +31,8 @@ The current version also includes an Embedded Station Runtime. It provides a com
 
 ## Data Model
 
+<img src="images/equipment_field_signals.png" alt="Equipment field signals" width="48%"> <img src="images/opc_ua_data_layer.png" alt="OPC UA data layer" width="48%">
+
 The Data Model is the shared layer between the data source and the UI. It stores:
 
 - the equipment hierarchy and NodeIds;
@@ -40,6 +44,8 @@ The Data Model is the shared layer between the data source and the UI. It stores
 The transport layer updates the model, while every HMI page observes it. This keeps communication logic separate from visualization and ensures that all screens present the same system state.
 
 ## Automatic UI generation
+
+![UI](images/crowpanel_hmi.png)
 
 The UI Generator creates LVGL widgets from the discovered model:
 
